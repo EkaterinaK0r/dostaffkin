@@ -89,13 +89,13 @@
                         <textarea id="comment"  fromControlName="comment" placeholder="Детали доставки и комментарии"></textarea>
                     </div>
                 </div>
-                <button id="submit" class="button main-submit-request" type="button" [disabled]="!calculationResult() || orderform.invalid" (click)="submitOrder()">Отправить
+                <button id="submit" class="button main-submit-request" type="button" [disabled]="!calculationResult() || orderForm.invalid" (click)="submitOrder()">Отправить
                     заявку
                 </button>
             </div>
 
-            <div class="main-order-success" id="orderSuccess" [class.is-vizible]="orderTd()">
-                <div class="main-success-icon">✓</div>
+            <div class="main-order-success" id="orderSuccess" [class.is-visible]="orderId()">
+                <div class="main-success-icon">✓</div>                
                 <div class="main-success-title">Заявка отправлена!</div>
                 <div class="main-success-title">Номер отправления – <span id="orderId" {{orderTd()}}></span></div>
                 <div class="main-success-subtitle">Мы скоро свяжемся с вами</div>
